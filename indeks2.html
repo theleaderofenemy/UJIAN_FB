@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HOMW | DUNIA GAYAMU</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+
+      .custom-card {
+        max-width: 700px;
+        margin: 0 auto;
+      }
+      .carousel-item img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+      .col img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+      .back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  background-color: #00000000;
+  color: #00a2ff;
+  text-decoration: none;
+  transition: opacity 0.4s;
+  font-size: 24px; 
+}
+
+.back-to-top:hover {
+  background-color: #00a2ff;
+  color: #ffffff;
+}
+
+      footer.bg-dark {
+        background-color: #000000;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        margin: 0 10px;
+      }
+
+      .text-white {
+        color: #fff;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+      body {
+  background-image: url("latar2 (1).jpg");
+  background-size: cover;
+  background-position: auto;
+  background-repeat: no-repeat;
+}
+#buy:hover{
+background-color: #000;
+color: #fff;
+}
+nav a:hover {
+        color: #b6d9df !important;
+    }
+    .sidebar {
+      display: none;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #333;
+      padding: 15px;
+      color: #fff;
+      width: 250px;
+    }
+
+    .btn-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .btn-group button {
+      margin-bottom: 10px;
+    }
+    .imgcontainer {
+            text-align: center;
+            margin: 24px 0 12px 0;
+        }
+
+        img.avatar {
+            width: 40%;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+  </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-none fixed-top">
+        <ul class="nav nav-underline">
+            <li class="nav-item">
+              <a class="nav-link active" href="#sidebar" style="font-size: 30px; color: #b6d9df;" onclick="toggleSidebar()"><b>Dunia Gayamu</b></a>
+            </li>
+          </ul>
+        
+          <!-- Sidebar -->
+          <div class="sidebar" id="sidebar">
+            <h5>User Information</h5>
+            <div class="imgcontainer">
+                <img src="https://i.pinimg.com/originals/c6/e9/ed/c6e9ed167165ca99c4d428426e256fae.png" alt="Avatar" class="avatar">
+            </div>
+            <p>Username: admin</p>
+            <p>Password: Password1234</p>
+            <div class="btn-group">
+                <button class="btn btn-secondary" onclick="toggleSidebar()">Back</button>
+                <button class="btn btn-danger" onclick="logout()">Logout</button>
+              </div>
+            </div>
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+          <script>
+            function toggleSidebar() {
+              var sidebar = document.getElementById("sidebar");
+              if (sidebar.style.display === "none" || sidebar.style.display === "") {
+                sidebar.style.display = "block";
+              } else {
+                sidebar.style.display = "none";
+              }
+            }
+            function logout() {
+      alert('Logout successful!');
+    window.location.href = 'Indeks.html';
+
+    }
+          </script>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="nav nav-underline">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#About">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#Product">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="Indeks.html">Log Out</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <br><br><br><div class="custom-div mt-5" style="width: auto; text-align: center; background-color: #ffffff00; color: #b6d9df; margin-top: 60px;">
+        <div class="custom-div-body mt-4 mb-4 ">
+          <h3 class="custom-div-title" style="font-size: 50px;"><u>Welcome to Dunia Gayamu</u></h3>
+          <a href="#Product" class="btn btn-outline-info">See Product</a>
+        </div>
+      </div>
+      
+<section id="About" >
+  <div class="card-body">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <div class="card mt-2 mx-auto" style="width: 31rem; background-color: rgba(0, 0, 0, 0.5);color: #fff;">
+            <div class="card-body">
+              <h3 class="card-title" style="text-align: left; color:#17a2b8;">Gallery</h3><hr>
+              <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="1.jpg" class="d-block w-200" alt="..."style="width: 300px; height:300px">
+                      <h5>Mengantri</h5>
+                      <p>Gambar Di atas Merupakan Beberapa orang yang sedang Mengantri.</p>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="2.jpg" class="d-block w-200" alt="..." style="width: 300px; height:300px">
+                      <h5>Membeli</h5>
+                      <p>Gambar Di atas Merupakan Seorang yang Ingin membeli baju yang ia pilih.</p>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="3.jpg" class="d-block w-200" alt="..." style="width: 300px; height:300px";>
+                      <h5>Memilih</h5>
+                      <p>Gambar Di atas Merupakan Beberapa Seorang yang memilih baju.</p>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="col">
+        <div class="card mt-2 mx-auto" style="width: 37rem; height: 31.0rem;background-color: rgba(0, 0, 0, 0.5);color: #fff;">
+            <div class="card-body">
+                <h3 class="card-title" style="text-align: left;color:#17a2b8;">About Us</h3><hr>
+            <div style="text-align: left;">
+                <p>Menyediakan pakaian trendi dengan harga rata-rata 100rb. Banyak varian jenis seperti Baju, Topi, Jas, Kemeja, Sepatu, Sandal, Jaket, Celana.</p><hr>
+                <p><b>Baju, Pilihan fashion yang stylish dan trendy, memberikan pengalaman berpakaian yang unik. Beberapa manfaatnya antara lain: </b> <br>
+                1.Ekspresi Diri : Baju memungkinkan Anda mengekspresikan diri melalui gaya dan warna yang Anda pilih.<br>
+                2.Kenyamanan : Kain yang nyaman digunakan sehingga Anda dapat merasa nyaman sepanjang hari.<br>
+                3.Perubahan Cuaca : Pakaian yang sesuai dengan cuaca, seperti jaket untuk hari-hari dingin atau singlet untuk cuaca panas.<br>
+                </p><hr><b>
+                MyProduct Name: DuniaGayamu<br>
+                Address : Jl.sesat, Kota Medan<br>
+                No.Telp : +62 895-4011-74533<br>
+                E-mail  : theleaderofenemy@gmail.com</b>
+            </div>
+            </div>
+          </div>
+      </div>
+    </div>
+</div>
+   </section>
+
+   <section id="Product";>
+    <div class="card mt-5 mx-auto mb-5 border-black" style="width:70rem ; text-align: center; background-color: rgba(0, 0, 0, 0.5);">
+      <div class="card-body">
+        <h3 class="card-title" style="text-align: left;color: #17a2b8;">Product</h3><hr style="border-color: rgb(255, 255, 255);">
+        <div class="row">
+          <div class="col m-3 mt-3">
+            <div class="card bg-secondary text-white" style="width: 15rem;">
+              <img src="baju.png" class="card-img-top" alt="..." style="height:160px ;">
+              <div class="card-body">
+                <p class="card-text">Baju</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mx-auto mt-3">
+            <div class="card bg-black text-white" style="width: 15rem;">
+              <img src="topi.png" class="card-img-top" alt="..." style="height:160px ;">
+              <div class="card-body">
+                <p class="card-text">Topi</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mx-auto mt-3">
+            <div class="card bg-secondary text-white" style="width: 15rem;">
+              <img src="kemeja.png" class="card-img-top" alt="..." style="height:160px ;">
+                <div class="card-body">
+                 <p class="card-text">Kemeja</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mx-auto mt-3">
+            <div class="card bg-black text-white" style="width: 15rem;">
+                          <img src="sepatu.png" class="card-img-top" alt="..." style="height:160px ;">
+                          <div class="card-body">
+                            <p class="card-text">Sepatu</p>
+                          </div>
+                        </div>
+                      </div>
+        </div>
+        <div class="row">
+          <div class="col m-3 mt-4">
+            <div class="card bg-black text-white" style="width: 15rem;">
+                          <img src="sandal.png" class="card-img-top" alt="..." style="height:160px ;">
+                          <div class="card-body">
+                            <p class="card-text">Sandal</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col mx-auto mt-4">
+                        <div class="card bg-secondary text-white" style="width: 15rem;">
+                                      <img src="jas.png" class="card-img-top" alt="..." style="height:160px ;">
+                                      <div class="card-body">
+                                        <p class="card-text">Jas</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col mx-auto mt-4">
+                                    <div class="card bg-black text-white" style="width: 15rem;">
+                                                  <img src="jaket.png" class="card-img-top" alt="..." style="height:160px ;">
+                                                  <div class="card-body">
+                                                    <p class="card-text">Jaket</p>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="col mx-auto mt-4">
+                                                <div class="card bg-secondary text-white" style="width: 15rem;">
+                                                              <img src="celana.png" class="card-img-top" alt="..." style="height:160px ;">
+                                                              <div class="card-body">
+                                                                <p class="card-text">Celana</p>
+                                                              </div>
+                                                            </div>
+                                                          </div>                                                          
+                                                        </div>
+                                                        <a href="https://wa.me/62895401174533?text=Apakah%20barang%20masih%20ada" class="btn btn-outline-info mt-4" style="width: 10rem;"><b>Buy now</b></a>
+      </div>
+    </div>
+   </section>
+   <button type="button" class="btn btn-outline-light back-to-top" id="backToTopBtn">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+   <footer class="bg-none text-white text-center py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12" style="font-size: 36px;">
+          <h4 style="color: #ffffff;"><b>Ikuti Kami di Media Sosial</b></h4>
+                    <a href="https://m.facebook.com/yourpage" class="text-white mr-3" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/yourpage" class="text-white mr-3" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/yourpage" class="text-white mr-3" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://m.linkedin.com/company/yourpage" class="text-white" target="_blank"><i class="fab fa-linkedin"></i></a>
+         </div>
+      </div>
+    </div>
+  </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+    // Show or hide the button based on scroll position
+    $(window).scroll(function(){
+      if ($(this).scrollTop() > 100) {
+        $('#backToTopBtn').fadeIn();
+      } else {
+        $('#backToTopBtn').fadeOut();
+      }
+    });
+
+    // Scroll to top when the button is clicked
+    $('#backToTopBtn').click(function(){
+      $('html, body').animate({scrollTop : 0},800);
+      return false;
+    });
+  });
+</script>
+  </body>
+</html>
